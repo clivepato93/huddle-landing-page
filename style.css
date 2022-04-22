@@ -49,13 +49,13 @@ main{
 }
 
 .btn{
-    cursor:pointer;
     border: 1px solid;
+    cursor:pointer;
 }
 
-.btn:hover{
-    cursor: pointer;
+.clicked{
     background-color: pink;
+    cursor: pointer;
 }
 
 img{
