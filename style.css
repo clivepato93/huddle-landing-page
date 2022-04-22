@@ -53,6 +53,7 @@ main{
 }
 
 .btn:hover{
+    cursor: pointer;
     background-color: pink;
 }
 
