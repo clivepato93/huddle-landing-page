@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;800&family=Overpass&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --Violet: hsl(257, 40%, 49%);
+    --Soft-Magenta: hsl(300, 69%, 71%);
+}
+
+html{
+    font-size: 62.5%;
+
+}
+
+div{
+    cursor: pointer;
+}
+
+body{
+    background-color: var(--Violet);
+    background-image: url(/images/bg-desktop.svg);
+    background-size:100%;
+    background-repeat: no-repeat;
+    background-position:-120px -10px;
+    padding: 2.6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 2.5rem;
+    font-family: 'Manrope';
+    color: white;
+    position: relative;
+}
+
+main{
+    border: 1px solid;
+    display: flex;
+}
+
+.info{
+    width: auto;
+    border: 1px solid;
+}
+
+.btn{
+    border: 1px solid;
+}
+
+.btn:hover{
+    background-color: pink;
+}
+
+/* body::before{ */
+    /* position: absolute;
+    content: '';
+    z-index: -1;
+    background-image: url(/images/bg-desktop.svg);
+    background-size:110%;
+    background-repeat: no-repeat;
+    background-position: 70px -20px;
+    padding: 2.6rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 2.5rem;
+    font-family: 'Manrope';
+    color: white;
+    position: relative; */
+/* } */
+
+/* .container{
+    content: ' ';
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+
+
+} */
+
+img{
+    display: block;
+}
+
+.logo{
+    width: 20rem;
+    margin: 3rem 0 10rem 0;
+}
+
+.illustration{
+    max-width:120rem;
+}
+
+
+
+
+@media screen and (max-width:380px) {
+    body{
+        background-image: url(/images/bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+}
