@@ -142,14 +142,7 @@ button:last-child{
 
 }
 
-
-
-
-
-
-
-
- @media only screen and (max-width:42rem){
+ @media only screen and (max-width:90rem){
     body{
         background-image: url(images/bg-mobile.svg);
         background-repeat: no-repeat;
