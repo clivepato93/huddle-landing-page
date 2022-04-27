@@ -21,7 +21,8 @@ body{
     background-color: var(--Violet);
     background-image: url(images/bg-desktop.svg);
     background-repeat: no-repeat;
-    background-position:-120px -10px;
+    background-position:-2rem 0px;
+    background-size: 110%;
     padding:2.6rem;
     height: 100vh;
     display: flex;
@@ -33,17 +34,36 @@ body{
     position: relative;
 }
 
+img{
+    display: block;
+}
+
 main{
+    border: 1px solid;
     display: flex;
-    width:120rem;
+    max-width:144rem;
+    height: 70rem;
+}
+
+.imgContainer{
+    border:1px solid black;
+    width: 77rem;
+}
+
+.illustration{
+    /* width:80rem; */
+   width:100%;
+    height: auto;
+    
 }
 
 .info{
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: auto;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 75rem;
     margin-left: 1.5rem;
 }
 
@@ -54,7 +74,9 @@ p{
 }
 
 h1{
+    border: 1px solid;
     font-family: 'Poppins';
+    width: 48rem;
 }
 
 .btn{
@@ -69,30 +91,25 @@ h1{
     background-color: white;
     color: var(--Violet);
     margin-bottom: 9rem;
+    cursor: pointer;
 }
 
-.clicked{
+.btn:hover{
+
     background-color: var(--Soft-Magenta);
     color: white;
     cursor: pointer;
 }
 
 
-img{
-    display: block;
-}
+
 
 .logo{
     width: 20rem;
-    margin: 3rem 0 3rem 0;
+    margin-bottom:2rem;
 }
 
-.illustration{
-    width:90rem;
-    width: 130%;
-    height: auto;
-    
-}
+
 
 .buttons{
     display: flex;
@@ -117,6 +134,22 @@ button:last-child{
     background-color: var(--Violet);
 }
 
+.btnStyle:hover{
+    border:2px solid violet;
+    /* border-radius: 50%; */
+    /* filter: invert(75%) sepia(17%) saturate(6555%) hue-rotate(252deg) brightness(108%) contrast(82%); */
+
+    background-color: var(--Violet);
+}
+
+.btnStyle:hover img{
+    /* border:2px solid black; */
+    /* border-radius: 50%; */
+    filter: invert(75%) sepia(17%) saturate(6555%) hue-rotate(252deg) brightness(108%) contrast(82%);
+
+    /* background-color: var(--Violet); */
+}
+
 .notClicked{
     border: 2px solid white;
 }
@@ -135,21 +168,54 @@ button:last-child{
 
 }
 
-.socialBtnClick{
-    width: 3rem;
-    filter: invert(75%) sepia(17%) saturate(6555%) hue-rotate(252deg) brightness(108%) contrast(82%);
-
+.socialBtntest{
+    border:2px solid white;
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(1000%) contrast(97%);
 
 }
 
- @media only screen and (max-width:90rem){
+/* .iconTest{
+    width: 4rem;
+    height: 4rem;
+} */
+
+.socialBtnClick{
+    width: 3rem;
+    filter: invert(75%) sepia(17%) saturate(6555%) hue-rotate(252deg) brightness(108%) contrast(82%);
+}
+
+.socialBtntest:hover{
+    border:2px solid black;
+    /* border-radius: 50%; */
+    filter: invert(75%) sepia(17%) saturate(6555%) hue-rotate(252deg) brightness(108%) contrast(82%);
+
+}
+
+/* .circle{ */
+    /* border:2px solid; */
+    /* border-radius: 50%; */
+    /* width: 5rem; */
+    /* height: 5rem; */
+/* } */
+
+/* .circle:hover{
+    border:2px solid var(--Soft-Magenta);
+    border-radius: 50%;
+} */
+
+
+ @media only screen and (max-width:1000px){
     body{
         background-image: url(images/bg-mobile.svg);
         background-repeat: no-repeat;
         background-size: 110%;
         background-position:-20px 50px;
     }
-
+ }
+/*
     main{
         flex-direction: column;
         align-items: center;
