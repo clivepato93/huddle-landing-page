@@ -27,8 +27,6 @@ body{
     height: 100vh;
     display: flex;
     flex-direction: column;
-
-    /* justify-content: center; */
     font-size: 2.5rem;
     font-family: 'Open Sans';
     color: white;
@@ -43,33 +41,26 @@ img{
 
 main{
     padding: 2.6rem;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
     max-width:1700rem;
 }
 
 .logo{
-    border: 1px solid black;
     width: 100%;
-    /* margin-bottom:2rem; */
     align-self: flex-start;
 }
 
 .logoImg{
-    width: 20rem;
+    width: 30rem;
 }
 
 .container{
     margin-top: 7rem;
     display: flex;
-    border: 1px solid black;
 }
 
 .illustration{
-    /* width:80rem; */
-    border:1px solid goldenrod;
-
     width: 140rem;
     height: auto;
     
@@ -80,14 +71,9 @@ main{
 }
 
 .info{
-    border:1px solid goldenrod;
     margin-top: 10rem;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
-    /* width: 1%; */
-    /* margin-left: 1.5rem; */
 }
 
 p{
@@ -95,17 +81,18 @@ p{
     margin: 2rem 0;
     font-size: 1.65rem;
     width: 47rem;
-    border: 1px solid;
 }
 
 h1{
-    border: 1px solid;
     font-family: 'Poppins';
     width: 48rem;
 }
 
+#btn{
+    transition-timing-function: ease-out;
+}
+
 .btn{
-    /* align-self: flex-start; */
     cursor:pointer;
     display: flex;
     justify-content: center;
@@ -118,6 +105,7 @@ h1{
     margin-bottom: 9rem;
     cursor: pointer;
     font-size: 1.6rem;
+
 }
 
 .btn:hover{
@@ -125,15 +113,13 @@ h1{
     background-color: var(--Soft-Magenta);
     color: white;
     cursor: pointer;
+    transition-timing-function: ease-out;
 }
 
 .buttons{
     display: flex;
     flex-direction: column;
     border: 1px solid;
-    /* width:120rem;    */
-    /* justify-content: flex-end; */
-    
 }
 
 .icons{
@@ -147,32 +133,26 @@ button:nth-child(2){
 }
 
 .btnStyle{
-    border-radius: 50%;
-    
+    border-radius: 50%; 
     opacity: 1;
     width: 5rem;
     height: 5rem;
     display: flex;
     justify-content: center;
+    border: 2px solid white;
     align-items: center;
     background-color: var(--Violet);
 }
 
 .btnStyle:hover{
+    transition: 1s;
     border:2px solid violet;
     background-color: var(--Violet);
 }
 
 .btnStyle:hover img{
+    transition: 1s;
     filter: invert(75%) sepia(17%) saturate(6555%) hue-rotate(252deg) brightness(108%) contrast(82%);
-}
-
-.notClicked{
-    border: 2px solid white;
-}
-
-.click{
-    border: 2px solid var(--Soft-Magenta);
 }
 
 .socialBtn{
@@ -180,35 +160,13 @@ button:nth-child(2){
     filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(1000%) contrast(97%);
 
 }
-
-.socialBtntest{
-    border:2px solid white;
-    border-radius: 50%;
-    width: 10rem;
-    height: 10rem;
-    filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(1000%) contrast(97%);
-
-}
-
-/* .iconTest{
-    width: 4rem;
-    height: 4rem;
-} */
-
-.socialBtnClick{
-    width: 3rem;
-    filter: invert(75%) sepia(17%) saturate(6555%) hue-rotate(252deg) brightness(108%) contrast(82%);
-}
-
-.socialBtntest:hover{
-    border:2px solid black;
-    /* border-radius: 50%; */
-    filter: invert(75%) sepia(17%) saturate(6555%) hue-rotate(252deg) brightness(108%) contrast(82%);
-
-}
-
 footer{
     align-self: center;
+
+}
+
+.attribution{
+    font-size: 1.8rem;
 }
 
  @media only screen and (max-width:90rem){
@@ -221,11 +179,11 @@ footer{
      main{
          padding: 0;
          width:100%;
-         /* flex-direction: column; */
-         /* align-items: center; */
-    
-    
      }
+
+     .logoImg{
+        width: 20rem;
+    }
 
      .illustration{
         width: 100%;
@@ -257,46 +215,9 @@ footer{
      }
 
      p{
-        /* font-size: 1rem; */
         width: 100%;
-         /* width: 37rem; */
      }
      .icons{
          align-self: center;
      }
  }
-     /*
-}
-
-    .illustration{
-        width: 35rem;
-        margin-bottom: 7rem;
-    }
-    
-    .info{
-        width: 100%;
-        text-align: center;
-        font-size: 1.9rem;
-        margin: 2rem 0;
-    }
-
-    .btn{
-        align-self: center;
-        margin-bottom: 0rem;
-    }
-    
-    h1{
-        font-weight: 600;
-    }
-    
-     p{
-        font-weight: 500;
-        margin: 2rem 0;
-    }
-
-    .buttons{
-        display: flex;
-        width: 37rem;
-        justify-content: center;
-    }
-}
